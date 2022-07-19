@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>War Crime Tribunal and Status of the Emperor</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2d18f71c-022f-49ea-8f57-31ebc7d4f91a" class="page sans"><header><h1 class="page-title">War Crime Tribunal and Status of the Emperor</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M7.01356 14.0001C8.8042 14.0001 10.5958 13.3107 11.9575 11.9324C14.681 9.21201 14.6808 4.7603 11.9571 2.04013C9.23336 -0.680043 4.77573 -0.680043 2.05199 2.04013C0.727519 3.36277 0 5.13301 0 6.99553C0 8.8764 0.727811 10.6285 2.05199 11.9509C3.43207 13.3106 5.22243 14.0001 7.01356 14.0001ZM3.72947 7.00914V8.461V8.65543H3.92382H5.34563H8.2794H8.4738V8.461V5.52541V3.37947V3.18502H8.2794H6.82747H6.63307V3.37947V6.81467H3.92382H3.72947V7.00914ZM1.83985 6.99553C1.83985 5.61698 2.38099 4.32597 3.36061 3.3477C5.36746 1.34337 8.64803 1.34062 10.6585 3.33944C10.6613 3.34219 10.6639 3.34494 10.6668 3.3477C12.676 5.3546 12.6763 8.63642 10.6668 10.6434C8.65705 12.6504 5.37031 12.6504 3.36061 10.6434C2.38099 9.66506 1.83985 8.37408 1.83985 6.99553Z"></path></svg></span>Created</th><td><time>@June 28, 2022 9:09 AM</time></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Class</th><td></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Type</th><td></td></tr><tr class="property-row property-row-checkbox"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCheckbox"><path d="M0,3 C0,1.34314 1.34326,0 3,0 L11,0 C12.6567,0 14,1.34314 14,3 L14,11 C14,12.6569 12.6567,14 11,14 L3,14 C1.34326,14 0,12.6569 0,11 L0,3 Z M3,1.5 C2.17139,1.5 1.5,2.17157 1.5,3 L1.5,11 C1.5,11.8284 2.17139,12.5 3,12.5 L11,12.5 C11.8286,12.5 12.5,11.8284 12.5,11 L12.5,3 C12.5,2.17157 11.8286,1.5 11,1.5 L3,1.5 Z M2.83252,6.8161 L3.39893,6.27399 L3.57617,6.10425 L3.92334,5.77216 L4.26904,6.10559 L4.44531,6.27582 L5.58398,7.37402 L9.28271,3.81073 L9.45996,3.64008 L9.80664,3.3056 L10.1538,3.63989 L10.3311,3.81067 L10.8936,4.35303 L11.0708,4.52399 L11.4434,4.88379 L11.0708,5.24353 L10.8936,5.41437 L6.1084,10.0291 L5.93115,10.2 L5.58398,10.5344 L5.23682,10.2 L5.05957,10.0292 L2.83057,7.87946 L2.65283,7.70801 L2.27832,7.34674 L2.6543,6.98694 L2.83252,6.8161 Z"></path></svg></span>Reviewed</th><td><div class="checkbox checkbox-off"></div></td></tr></tbody></table></header><div class="page-body"><p id="b4cba523-0bdc-417f-876b-5ba5cecd071c" class=""><mark class="highlight-red"><em>&quot;Those who would oppose such an honest method can only be a minority… no sophistry can confine justice to any form. It is a quality. Its purity lies in its purpose, not in its detail.&quot;</em></mark> - MacArthur</p><ul id="ec2ac401-0436-4cba-838c-ebe238eebf96" class="bulleted-list"><li style="list-style-type:disc">The specific details of the Tokyo Trials don&#x27;t matter --&gt; It was more of a political goal to deal blame<ul id="37ae3df6-fb57-43b8-adc6-2f80a73dc6da" class="bulleted-list"><li style="list-style-type:circle">Had a political impact for the wider conflict</li></ul></li></ul><p id="b2160450-0061-4a35-98eb-42e26c7517bb" class="">The issues with the status of the Emperor all stem from the goals of US occupation</p><p id="0d24f691-5be3-408b-ab3f-261d3c7ed8f8" class="">Issues of the Tokyo Trials:</p><ul id="e790e8c3-6395-4db6-9b7a-82f58dac04fe" class="bulleted-list"><li style="list-style-type:disc">Legitimacy<ul id="d6291c24-9823-49e8-8381-f2169e2f627f" class="bulleted-list"><li style="list-style-type:circle">No legal precedents<ul id="bcaa0688-472b-4e3e-a2c2-6d4ef158fbfd" class="bulleted-list"><li style="list-style-type:square">Equated to Nuremberg --&gt; First trial of its kind</li></ul></li></ul></li></ul><ul id="a721bbb2-7373-431f-abd2-b01ed2de244b" class="bulleted-list"><li style="list-style-type:disc">&quot;Victors Justice&quot; --&gt; The winners equate justice<ul id="824f9773-9079-4bd5-8e8e-83aa8604904a" class="bulleted-list"><li style="list-style-type:circle">Ignoring atrocities committed by the Allies</li></ul></li></ul><ul id="7704dbbc-5285-4ee0-aca5-68b891105acd" class="bulleted-list"><li style="list-style-type:disc">Injustice<ul id="3c0d7bf8-f1a4-436f-a2ea-59d160401797" class="bulleted-list"><li style="list-style-type:circle">Did the trials blame the right people</li></ul><ul id="26d5948d-c76d-4764-bf89-6f3d24afa640" class="bulleted-list"><li style="list-style-type:circle">Did those impacted achieve justice / reparations</li></ul></li></ul><p id="2810d789-7b31-4160-85d9-aca2434ee6a9" class="">Status of the Emperor in the Trials</p><ul id="f8d695df-0322-4e92-9812-54d2f9963b49" class="bulleted-list"><li style="list-style-type:disc">The first time the Japanese people heard his voice</li></ul><ul id="c147206b-a417-47ff-8815-00b8d6a6a54e" class="bulleted-list"><li style="list-style-type:disc">Claimed that Japanese surrender was to stop the American cruelty and slaughter</li></ul><ul id="449370a9-8784-4f7e-8035-bdd047660b24" class="bulleted-list"><li style="list-style-type:disc">Debate outside Japan as to whether to trial</li></ul><p id="39c273eb-b2ad-4488-8bdc-d28b1e998bae" class="">Aims:</p><ul id="27136759-2674-4288-9dac-5877d5fdcb38" class="bulleted-list"><li style="list-style-type:disc">Hirohito had known since 1942 that war crimes trials were an Allied aim --&gt; Moscow Declaration 1943</li></ul><ul id="9fa0258e-bb09-412c-89f5-6504b0623e1f" class="bulleted-list"><li style="list-style-type:disc">First batch of arrests September 11th, 1945 --&gt; Top government figures</li></ul><ul id="e4cc00a0-1c52-4af7-83ae-0803b7418d66" class="bulleted-list"><li style="list-style-type:disc">Higashikuni proposed internal war crimes tribunal to seize initiative from Allies</li></ul><ul id="7ec25ca6-f29f-4c06-b748-9b1952ffcb2b" class="bulleted-list"><li style="list-style-type:disc">MacArthur wanted to protect the emperor<ul id="d72d87e2-6649-4c38-8122-ab4794bc8bdc" class="bulleted-list"><li style="list-style-type:circle">Protection of the emperor was fundamental<ul id="a8ff9d57-db32-45b8-8207-b1c2cd15845f" class="bulleted-list"><li style="list-style-type:square">Documents were withheld from court to remove his impact from the war</li></ul></li></ul><ul id="7b20d2f9-b289-4f1d-b1f0-97bbf7c5c63c" class="bulleted-list"><li style="list-style-type:circle">Knew the emperor was essential to winning Japanese favour (post-war plans)</li></ul></li></ul><ul id="596535b4-4ade-44a5-a593-73903ae0b28e" class="bulleted-list"><li style="list-style-type:disc">Prosecution and defence relationship cultivated positive relationship<ul id="c60e78c6-c683-4cb6-ae04-ff888221251e" class="bulleted-list"><li style="list-style-type:circle">Trials were used as propaganda to demonstrate success of US strategic bombing campaigns</li></ul><ul id="8b622e96-f241-48cb-bacd-33cdaa57e4a9" class="bulleted-list"><li style="list-style-type:circle">Tojo was used as a scapegoat and was pressured to testify to save the emperor</li></ul><ul id="85596131-063e-474b-b99f-bb89d49480e2" class="bulleted-list"><li style="list-style-type:circle">Spread &#x27; controlled&#x27; democracy - Japan would play an integral role in upcoming war with the Soviets</li></ul><ul id="e5fdc0dc-2353-4288-b184-e702e4c0933f" class="bulleted-list"><li style="list-style-type:circle">Place all responsibility on the army</li></ul><ul id="3fd6a1a4-7176-4779-907e-3fc48509ac12" class="bulleted-list"><li style="list-style-type:circle">Preserve and defend the state</li></ul><ul id="ec711e79-bab1-4551-9d1b-e6bdc34e963f" class="bulleted-list"><li style="list-style-type:circle">Nuremberg was the legal model and a psychological pressure</li></ul><ul id="2958fcea-0929-42a5-b681-dae86b156b96" class="bulleted-list"><li style="list-style-type:circle">Charges for &quot;crimes against peace&quot; differed amongst nations and depended on their own interests rather than morality<ul id="711db64a-02ba-4f45-9303-e14439656139" class="bulleted-list"><li style="list-style-type:square">100 from Australia</li></ul><ul id="9692e235-0b55-48b2-af8f-67553603c145" class="bulleted-list"><li style="list-style-type:square">30 from the USA</li></ul><ul id="e2d5a376-1bb2-47bd-839f-fee1f92e3fca" class="bulleted-list"><li style="list-style-type:square">11 from Britain</li></ul></li></ul></li></ul><p id="addf0d74-72d2-404c-adae-56a1aff8689f" class="">Consequences of the War Crimes Tribunal</p><ul id="d118663a-8b0c-4e34-8a60-10a1cadaab24" class="bulleted-list"><li style="list-style-type:disc">International Military Tribunal from the Far East, &quot;Tokyo Trial&quot;</li></ul><ul id="76a22534-f587-495d-89eb-7cd5fda203e0" class="bulleted-list"><li style="list-style-type:disc">Potsdam --&gt; Stern justice to war criminals</li></ul><ul id="718998c4-104a-49ff-8108-6dfebdd90f20" class="bulleted-list"><li style="list-style-type:disc">Generals executed in Philippines prior to tribunal in January of 1946</li></ul><ul id="573218ad-815e-4295-82db-a07af783510e" class="bulleted-list"><li style="list-style-type:disc">Severely shaped by US economic and political dominance as well as MacArthur&#x27;s excessive power</li></ul><ul id="1adc3107-ee91-48a9-b076-29d27fb1eebf" class="bulleted-list"><li style="list-style-type:disc">The court was effectively a US Supreme Court conducted on the basis of Truman&#x27;s executive powers</li></ul><ul id="79061e4c-a373-414f-a1c9-dca6e2148ffa" class="bulleted-list"><li style="list-style-type:disc">Allied scheming so Emperor wasn&#x27;t testified against / implicated</li></ul><ul id="fe64a63d-dc42-4928-946d-4a04bce6e992" class="bulleted-list"><li style="list-style-type:disc">Defence against communism was commonly raised throughout the trial</li></ul><ul id="04260241-3fe0-4f5c-99d8-7ba256cc7edd" class="bulleted-list"><li style="list-style-type:disc">Victors Justice<ul id="5494e94e-99f7-4c8f-9199-93bd53ff9464" class="bulleted-list"><li style="list-style-type:circle">Allied atrocities overlooked</li></ul><ul id="09aa8f3c-4c18-4ac8-8f9c-d092c1ef46e0" class="bulleted-list"><li style="list-style-type:circle">US influence / Western imperialism &#x27;reinstated&#x27;</li></ul></li></ul><p id="f4767691-72a3-4816-98c8-2855c068967a" class="">Individual Consequences</p><ul id="c9e6a331-380e-4248-80a8-1c2c6f329c6c" class="bulleted-list"><li style="list-style-type:disc">Tojo received the death sentence along with 5 others</li></ul><ul id="e1bddfec-b692-4cb8-b554-d2402c7cc4cb" class="bulleted-list"><li style="list-style-type:disc">&#x27;Independence&#x27; of foreign judges contributed to the acceptance of trial results by the Japanese</li></ul><ul id="23e42e3a-cb60-42c6-84aa-2600f4dda8ae" class="bulleted-list"><li style="list-style-type:disc">Strengthened hatred of militarism and war --&gt; People dedicated themselves to democracy</li></ul><ul id="78468ac7-d779-4366-bb69-68e0f6dfa734" class="bulleted-list"><li style="list-style-type:disc">Emperors image was remade</li></ul><ul id="53abc17c-b3ad-4c4b-a50c-6471b41c893d" class="bulleted-list"><li style="list-style-type:disc">7 leaders hung, 16 life imprisonment, 1 20 years. Five die in prison, others don&#x27;t serve out terms, 18 others imprisoned</li></ul><ul id="b260adca-8c28-4e6c-a90a-558a5a058297" class="bulleted-list"><li style="list-style-type:disc">Purges covered anyone in a position of high responsibility in the Japanese government since 1937 (Including over 200,000 people)</li></ul><ul id="503176b5-6e65-4e2e-a823-a8c2afe0ec25" class="bulleted-list"><li style="list-style-type:disc">Many members of the Japanese parliament were debarred from holding office</li></ul><ul id="d307b475-d0d2-4d69-8108-bc8c36bec638" class="bulleted-list"><li style="list-style-type:disc">Revealed:<ul id="99b14f53-352c-4ebd-b7ce-ab70720f962e" class="bulleted-list"><li style="list-style-type:circle">Deceit of war leaders</li></ul><ul id="b6b90466-370b-4ae4-829a-447f8a90f336" class="bulleted-list"><li style="list-style-type:circle">Kwantung Army conspiracy --&gt; Manchuria incident</li></ul><ul id="332d1a7d-eab1-424c-a903-563c47dabfa3" class="bulleted-list"><li style="list-style-type:circle">Treatment of PoW</li></ul><ul id="511a15d1-a1bc-46e0-9769-06c987395790" class="bulleted-list"><li style="list-style-type:circle">Evidence of mass atrocities at Nanking, killing of civilians in Manila, Bataan Death March</li></ul><ul id="613abaae-2a79-4780-8113-73af3920bbbc" class="bulleted-list"><li style="list-style-type:circle">Rape of women in occupied territories --&gt; Setting a precedent for future war crimes tribunals</li></ul></li></ul><p id="4432890a-6e77-41ee-a6f3-bb49031b47f1" class="">[The Trial]: <mark class="highlight-red"><em>&quot;Had a principal author who escaped all prosecution and of whom, in any case the present Defendants could only be considered accomplices&quot;</em></mark><mark class="highlight-red"> </mark>- Judge Henri Bernard (France)</p><p id="d6663528-017f-4af0-91a3-a760915f8e16" class="">Issues overall</p><ul id="31adacb6-7ba0-4c06-8430-98b7c04fe28f" class="bulleted-list"><li style="list-style-type:disc">Pro-American support<ul id="dd4828b2-6892-4fcb-ad61-37ca3719312d" class="bulleted-list"><li style="list-style-type:circle">Chiang Kai-Shek</li></ul><ul id="9264cca0-8ca8-4cea-b9ea-15ffbc6f31e1" class="bulleted-list"><li style="list-style-type:circle">Philippines</li></ul></li></ul><ul id="a06371ca-07cf-4e4c-aec7-012d812ed655" class="bulleted-list"><li style="list-style-type:disc">Selective use of evidence<ul id="4c268cfe-f493-431a-bb92-59e07b7c5e58" class="bulleted-list"><li style="list-style-type:circle">Hirohito&#x27;s testimony altered</li></ul><ul id="9aec2f53-fe9a-435d-8bef-e170c28a2bd6" class="bulleted-list"><li style="list-style-type:circle">Hidden documents</li></ul><ul id="0b26ee8f-891f-43ae-90fa-cc69a681dff2" class="bulleted-list"><li style="list-style-type:circle">Admissions</li></ul></li></ul><ul id="1704711c-cb7c-421a-a03c-f748d0b30b6a" class="bulleted-list"><li style="list-style-type:disc">Arbitrary decision making process<ul id="268793cc-a3fa-4310-9d11-47a71b05ae6f" class="bulleted-list"><li style="list-style-type:circle">Unit 731<ul id="c70737f9-3a7e-4228-b9cd-e771f942976d" class="bulleted-list"><li style="list-style-type:square">Given immunity by the US for research data</li></ul><ul id="cacd9ede-fcfd-4950-9805-e26a128c5a9a" class="bulleted-list"><li style="list-style-type:square">Conducted inhumane / lethal experimentation on humans in Manchuria</li></ul></li></ul></li></ul></div></article></body></html>

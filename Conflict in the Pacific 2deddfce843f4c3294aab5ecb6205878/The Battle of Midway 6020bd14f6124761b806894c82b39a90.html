@@ -1,0 +1,689 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Battle of Midway</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6020bd14-f612-4761-b806-894c82b39a90" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🚢</span></div><h1 class="page-title">The Battle of Midway</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M7.01356 14.0001C8.8042 14.0001 10.5958 13.3107 11.9575 11.9324C14.681 9.21201 14.6808 4.7603 11.9571 2.04013C9.23336 -0.680043 4.77573 -0.680043 2.05199 2.04013C0.727519 3.36277 0 5.13301 0 6.99553C0 8.8764 0.727811 10.6285 2.05199 11.9509C3.43207 13.3106 5.22243 14.0001 7.01356 14.0001ZM3.72947 7.00914V8.461V8.65543H3.92382H5.34563H8.2794H8.4738V8.461V5.52541V3.37947V3.18502H8.2794H6.82747H6.63307V3.37947V6.81467H3.92382H3.72947V7.00914ZM1.83985 6.99553C1.83985 5.61698 2.38099 4.32597 3.36061 3.3477C5.36746 1.34337 8.64803 1.34062 10.6585 3.33944C10.6613 3.34219 10.6639 3.34494 10.6668 3.3477C12.676 5.3546 12.6763 8.63642 10.6668 10.6434C8.65705 12.6504 5.37031 12.6504 3.36061 10.6434C2.38099 9.66506 1.83985 8.37408 1.83985 6.99553Z"></path></svg></span>Created</th><td><time>@May 25, 2022 10:32 AM</time></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Class</th><td><span class="selected-value select-value-color-yellow">Focus of Study</span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Type</th><td></td></tr><tr class="property-row property-row-checkbox"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCheckbox"><path d="M0,3 C0,1.34314 1.34326,0 3,0 L11,0 C12.6567,0 14,1.34314 14,3 L14,11 C14,12.6569 12.6567,14 11,14 L3,14 C1.34326,14 0,12.6569 0,11 L0,3 Z M3,1.5 C2.17139,1.5 1.5,2.17157 1.5,3 L1.5,11 C1.5,11.8284 2.17139,12.5 3,12.5 L11,12.5 C11.8286,12.5 12.5,11.8284 12.5,11 L12.5,3 C12.5,2.17157 11.8286,1.5 11,1.5 L3,1.5 Z M2.83252,6.8161 L3.39893,6.27399 L3.57617,6.10425 L3.92334,5.77216 L4.26904,6.10559 L4.44531,6.27582 L5.58398,7.37402 L9.28271,3.81073 L9.45996,3.64008 L9.80664,3.3056 L10.1538,3.63989 L10.3311,3.81067 L10.8936,4.35303 L11.0708,4.52399 L11.4434,4.88379 L11.0708,5.24353 L10.8936,5.41437 L6.1084,10.0291 L5.93115,10.2 L5.58398,10.5344 L5.23682,10.2 L5.05957,10.0292 L2.83057,7.87946 L2.65283,7.70801 L2.27832,7.34674 L2.6543,6.98694 L2.83252,6.8161 Z"></path></svg></span>Reviewed</th><td><div class="checkbox checkbox-off"></div></td></tr></tbody></table></header><div class="page-body"><h1 id="2822d15b-84bc-48cc-82ba-84c7c9f25505" class="">Midway June 4-7 1942</h1><figure id="a68b5881-44ae-48f0-9eab-268ac73ba0d4" class="image"><a href="The%20Battle%20of%20Midway%206020bd14f6124761b806894c82b39a90/Untitled.jpeg"><img style="width:576px" src="The%20Battle%20of%20Midway%206020bd14f6124761b806894c82b39a90/Untitled.jpeg"/></a></figure><ul id="fa08351f-6875-47c2-9aa9-a83a72d0df41" class="bulleted-list"><li style="list-style-type:disc">Decoded messages told U.S. Admiral <strong>Chester Nimitz</strong> that Japan was going to attack the American base at Midway in June 1942, A vital location to the defence of Hawaii</li></ul><ul id="3f18b6dd-44d9-4cf4-9e6a-b4cae1c2d45f" class="bulleted-list"><li style="list-style-type:disc">Intended to lure out US fleet from Pearl Harbour to create ambush</li></ul><ul id="823087d4-b6ee-463e-833f-e876b303fa50" class="bulleted-list"><li style="list-style-type:disc">Aimed to destroy US aircraft carriers that had escaped after Pearl Harbour</li></ul><ul id="c19739ea-5e1c-4623-aaee-bb34d6e9a5b9" class="bulleted-list"><li style="list-style-type:disc">Military initiative was still in the hands of the Japanese</li></ul><ul id="c7d473d8-5d15-4782-a85f-e1b4b81b6868" class="bulleted-list"><li style="list-style-type:disc">Japanese carrier striking force was still the strongest mobile air unit in the Pacific</li></ul><figure id="6a5160c5-0d46-445f-999a-8ade44f0b340" class="image"><a href="The%20Battle%20of%20Midway%206020bd14f6124761b806894c82b39a90/Untitled.png"><img style="width:2274px" src="The%20Battle%20of%20Midway%206020bd14f6124761b806894c82b39a90/Untitled.png"/></a></figure><h1 id="c7e6b2aa-c4c5-498d-9077-26547492cda1" class="">Japanese Strategy</h1><ul id="2b80ddc3-e857-4fa1-a517-c9f04b91baa3" class="bulleted-list"><li style="list-style-type:disc">The Japanese fleet widely dispersed, Yamamoto was forced to transmit his strategy by radio. And thus the Americans were able to recover about 90 per cent of the plan</li></ul><ul id="aede3c4a-bcbf-4d85-a1a5-b20f5cb087be" class="bulleted-list"><li style="list-style-type:disc">Yamamoto’s plan was too complex </li></ul><ul id="62211c2e-0eff-4bf6-9e88-c3913031c4ff" class="bulleted-list"><li style="list-style-type:disc">Japanese plans were equipped with bombs for an assault on Midway, not the torpedos required to take out carriers</li></ul><ul id="1032b2ad-94c9-4316-9eeb-72dbe265252a" class="bulleted-list"><li style="list-style-type:disc">Japanese were confident they had sunk the USS <em>Yorktown</em> at the battle of the Coral Sea - believed that the US only had 2 carriers</li></ul><ul id="8d385ee4-7599-4e79-8f30-12895751218a" class="bulleted-list"><li style="list-style-type:disc">Continued to attack Midway</li></ul><ul id="1c5c9fb6-ae18-42ad-bdac-301064f90d25" class="bulleted-list"><li style="list-style-type:disc">The Japanese did not have radar</li></ul><h1 id="75da9ebd-a985-4515-ab23-210bfeb832d6" class="">US Strategy</h1><ul id="28625d98-e5d5-4601-b4a5-4c86ee921aee" class="bulleted-list"><li style="list-style-type:disc">The Prize three U.S. carriers - <em>Yorktown, Enterprise</em>, and <em>Hornet</em></li></ul><ul id="5b264eb8-6c52-4159-9de6-168215cb6c46" class="bulleted-list"><li style="list-style-type:disc">Nimitz reinforced Midway prior to the attack</li></ul><ul id="2d5b7d1b-1051-4821-a8a9-7b5914d772ae" class="bulleted-list"><li style="list-style-type:disc">Knew that the ships and aircraft would be full of fuel, a sitting bomb.</li></ul><p id="a8708c26-9006-47c0-9c96-b637af7fb67f" class="">
+</p><p id="69161e0d-ff77-4627-b900-b5a49b1eda99" class="">
+</p><p id="7788cbfc-41c0-4418-8371-d194c804ad7b" class="">Japan was very overconfident that they had sunk and irreparably damaged the US carriers when they hadn’t really done that.</p><p id="8bbf4c13-df5f-473f-b834-42819d518ccc" class="">
+</p><blockquote id="6b13f24b-56a2-4ac9-9eed-4f4344128806" class="block-color-red">“The uncoordinated coordination of the dive bombers hitting three carriers at once while the torpedo strikes were still in progress,” wrote, “Except for those six short minutes, Nagumo would have been the victor, and all his decisions would have been accounted to him for righteousness” (Prange)</blockquote><h2 id="c01bbb9d-7eca-4209-be46-f75c93d04f11" class="">(on midway powerpoint)</h2><table id="d27421a9-9b07-4175-af91-57123c90bb1a" class="simple-table"><tbody><tr id="86154d30-a00c-431b-b025-1b43ac2d62af"><td id="g&gt;{r" class="">US Forces</td><td id="Ppzd" class="">Japan Forces</td></tr><tr id="461e0fe2-c783-41c8-97da-fb10c6af5d19"><td id="g&gt;{r" class=""></td><td id="Ppzd" class=""></td></tr><tr id="1e3d38a3-2353-4728-a802-84f7bec78c57"><td id="g&gt;{r" class=""></td><td id="Ppzd" class=""></td></tr></tbody></table><p id="a717b985-aa22-4cf0-9001-370cd13d2bd0" class="">
+</p><p id="34e2856b-1930-483d-b9b0-b182030a225e" class="">
+</p><h1 id="34ee6ab4-8735-4393-89b6-5dff18a5a10b" class="">Battle of Midway</h1><ul id="86d2b880-f1db-4a8d-b07f-6af6e04a8a1c" class="bulleted-list"><li style="list-style-type:disc">The first ‘major’ carrier vs. carrier engagement</li></ul><ul id="1f11d1bc-fe8c-4d00-87d1-8aaaf05331a5" class="bulleted-list"><li style="list-style-type:disc">Decided by cryptanalysis, tactics, radar, pilot skill, weather, and luck</li></ul><ul id="4432f38b-f5ca-4c72-8fa0-b45855b41885" class="bulleted-list"><li style="list-style-type:disc">In the space of about five minutes, American pilots knocked out three Japanese carriers - Akagi, Kaga, an Sōryū</li></ul><ul id="f87ab6d4-36e0-4984-bf20-56ee626a143c" class="bulleted-list"><li style="list-style-type:disc">Marked the outmanoeuvring and triumph of the US over the Japanese</li></ul><ul id="1ac2da1e-0497-4d00-ab44-9eba60a114ef" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">These were not new strategies/tactics, they were used in the Battle of the Coral Sea too.</mark></li></ul><p id="6c3255f2-4ae8-4751-8e95-b0e8032534a1" class="">BATTLE OF CORAL SEA WAS MORE OF A DRAW, MIDWAY WAS THE FIRST MAJOR VICTORY FOR THE AMERICANS AGAINST THE JAPANESE </p><h1 id="6e769564-c6f3-4d93-bc10-0b1ac4dfb36a" class="">Turning Point Quotes (Willmot)</h1><blockquote id="e65ddb98-cb94-4ccb-b2fd-3ba6e2925eda" class="">“Analysts and historians often point to Japanese aircraft losses at Midway as eliminating the power of the Imperial Navy’s air arm - two thirds of air crews survived. However, more devastating was the loss of trained mechanics and aircraft ground crews who went down with the ships”</blockquote><blockquote id="75dd7a4b-9206-4f8e-ae85-92dd5ac26711" class="">“The turning point in the Pacific theatre of the war, after which Americans rode straight to Tokyo”</blockquote><blockquote id="2a657f16-f649-486c-9edd-d3b465a300bb" class="">“The U.S. Navy lost just one carrier at Midway, means that four carriers (<em>Enterprise, Hornet, Saratoga, and Wasp</em>) were available when the U.S. Navy went on the offensive during the Guadalcanal campaign”</blockquote><blockquote id="6a85f301-261a-4601-a3b4-85679e1417bb" class="">“March of the Imperial Japanese Navy (IJN) across the Pacific was halted at Midway and never restarted” </blockquote><blockquote id="0dbeaf4f-1e4f-4a74-8d03-5578ae9439ad" class="">“’operational initiative’ had passed from the Japanese onto the Americans”</blockquote><blockquote id="402ad4c9-a43d-469f-9547-a0ce976da8ec" class=""><mark class="highlight-red">“Here is where we start from” - Raymond Spruance (Navy carrier task force commander)</mark></blockquote><p id="2fcabe4a-a0dc-4a4f-8cd2-4d54d9429228" class="">
+</p><ul id="6fa0e0d4-6f66-42e7-9df0-d8bb9e6bfd48" class="bulleted-list"><li style="list-style-type:disc">This is a USA do-or-die moment. This would provide a staging point for further attacks on pearl Harbour, and if Pearl Harbour could be taken, then the US would be driven out of the Western Pacific.</li></ul><ul id="44531563-d599-4928-8d1f-ed3cf066814a" class="bulleted-list"><li style="list-style-type:disc">Midway dictated the decision for the Americans and British to focus their major effort against Germany<ul id="c65aab29-1475-4aaf-bbcc-34efa6a0ffa9" class="bulleted-list"><li style="list-style-type:circle">Also meant that the USA and UK could focus on the North African campaign</li></ul></li></ul><ul id="43dc622e-fc07-4750-985d-d39439de9146" class="bulleted-list"><li style="list-style-type:disc">An irredeemable defeat that meant the premature death of the japanese carrier force</li></ul><blockquote id="31f19085-46dc-42e6-98dc-accb21be9b06" class="">“The Japanese had fondly hoped (indeed, expected) that by crushing the American carrier force, they would compel the Americans to see the hopelessness of their position and be brought to the bargaining table” - Willmot</blockquote><blockquote id="3848e138-24a5-465d-a78a-e7fcc928ae5c" class="">“The most stunning and decisive blow in the history of naval warfare.” John Keegan</blockquote><ul id="ea5a96a8-b2e2-46d7-ab0c-d873e8b6c6c9" class="bulleted-list"><li style="list-style-type:disc">^^ good quote, pretty emotive language for an objective historical piece of writing “stunning”</li></ul><ul id="17e0679e-061c-4312-a0ae-c72724005e0f" class="bulleted-list"><li style="list-style-type:disc">Historiographical respective: retrospective perspective, delineated by the writings of historians etc etc </li></ul><h1 id="9aa86e2e-845e-415d-b376-407a7066d3f3" class="">Arguments against “The Miracle at Midway”</h1><ul id="ccd7c6c5-5493-4762-9f44-1c5c4bfff408" class="bulleted-list"><li style="list-style-type:disc">Victory at Midway, did not win the war for the Allies overnight</li></ul><ul id="71ee0f20-b1ff-425e-97cb-6b1d04965fff" class="bulleted-list"><li style="list-style-type:disc">Midway merely underlined the utter bankruptcy of the naval strategy Japan had<ul id="e12ae2c7-7c43-4e4c-983e-dd1b0121ac8d" class="bulleted-list"><li style="list-style-type:circle">Their naval strategy was already destroyed at Coral Sea</li></ul><ul id="71bb4365-b3af-45fb-8bae-f5b97bb277ee" class="bulleted-list"><li style="list-style-type:circle">Their uncontested expansion over the entire Pacific didn’t really show them the issues that they had with their strategy until they had to fight another great naval power</li></ul><ul id="59e4de7d-181d-434f-bd47-6b3cad706823" class="bulleted-list"><li style="list-style-type:circle">The Japanese plan was flawed from the start, argument: “they were always going to lose this battle”. The turning point was the decision to invade China right at the start. It was always going in the same direction, towards Japanese loss</li></ul></li></ul><ul id="d68798f0-28df-48da-8f25-bb81b82ae808" class="bulleted-list"><li style="list-style-type:disc">Japanese did not head for the bargaining table. Decisive naval defeats.</li></ul><ul id="007feb3c-f8ba-4309-8cf4-d9f9374a9fd2" class="bulleted-list"><li style="list-style-type:disc">A cusp in the war, after which initiatives hung in the balance. This balance would clearly swing towards the Allies in the Guadalcanal campaign.</li></ul><ul id="2b906b00-8436-4eea-ad52-bda2dcfc260d" class="bulleted-list"><li style="list-style-type:disc">A decisive victory, but not a turning point.</li></ul><ul id="8b7897aa-779b-46ac-8ae4-1e5f685d2e62" class="bulleted-list"><li style="list-style-type:disc">A victory drenched in US glory, self promotion, and racial superiority </li></ul><blockquote id="0020433c-25bb-437a-aed8-f8a6f47f6d52" class="">“Despite popular myth, Nimitz’s decision to engage the japanese at Midway was not a desparate gamble against impossible odds but a carefully calculated plan” - O’Neill</blockquote><blockquote id="1549b1a4-c431-4410-af14-c77d934ded73" class="">“The Japanese wre drawing dead, the momentum of the Japanese Pacific offensive was finished” - Barker </blockquote><blockquote id="227b462b-ebe1-47c1-8403-11385be2a050" class="">“Jap fleet smashed by US - 2 carriers sunk at Midway” - Chicago Sunday Tribune  (June 7 1942)</blockquote><h1 id="284b9534-087c-4cab-b1b4-fc0a5f74d1d6" class="">Impacts</h1><ul id="048d8885-8682-4593-990f-9cdb7cf986e2" class="bulleted-list"><li style="list-style-type:disc">No landing on Midway</li></ul><blockquote id="6d5ab24b-889f-4478-a659-e9f161c68647" class="block-color-red">“Loss of Nagumo’s 4 carriers altered the balance of power in the Pacific” <mark class="highlight-red"> </mark>- O’Neill</blockquote><ul id="8b583436-21c4-4479-93e1-24505932d0e8" class="bulleted-list"><li style="list-style-type:disc">^^ Massively shifts the power balance</li></ul><ul id="cb842774-3335-49b4-8dd0-4e21559212cd" class="bulleted-list"><li style="list-style-type:disc">USA had invested heavily in damage control, fire-fighting and safety systems</li></ul><ul id="22fd434e-541d-4e7a-8137-de08c6e747fc" class="bulleted-list"><li style="list-style-type:disc">USS <em>Yorktown</em> damaged by Japanese torpedo, but was still operational</li></ul><ul id="00198799-fa9b-4921-b9a6-3977d7cbedad" class="bulleted-list"><li style="list-style-type:disc">The Japanese lost 4 carriers, a heavy cruiser, 3500 men and 270 aircraft during the battle</li></ul><ul id="8bf3ee14-b985-4155-bfae-a6ea8d4a79c1" class="bulleted-list"><li style="list-style-type:disc">Amercians lost 1 carrier, 100 men, and 130 aircraft </li></ul><h1 id="eb82f563-6801-4586-a010-b458e4e6d32d" class="">What to do if an essay question is about a turning point battle:</h1><h2 id="b7bf9f40-900a-4bc3-aae5-6322a51cc92a" class="">SPEND 70% OF YOUR ESSAY ON THE BATTLE THEY ASK FOR</h2><p id="450996a4-0e25-48c1-89ae-faa93d3c0d6d" class="">
+</p><p id="33a73178-c49f-486d-8bbd-060e0a05577d" class="">
+</p><p id="fdfc0903-45ff-47d3-9e8a-1a3d4b9fa239" class="">
+</p><h1 id="23e21292-db56-4d77-ae14-47f464506a20" class="">Notes on the Battle Of Midway Tactical Overview - youtube video</h1><ul id="44a399a0-5cd3-4387-991d-6e420567de43" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Allied &amp; Japanese tactics</strong></span></li></ul><p id="cd543c5c-2b07-44cb-9e08-781cd05402e4" class="">
+</p><p id="52363ee4-5867-4aeb-8aa6-33c866729591" class="">
+</p><p id="b3cd351a-a1ec-4367-80c6-44518784f21f" class="">
+</p><ul id="cf0f58c0-fc50-4ae8-88ba-05906ad4f8ca" class="bulleted-list"><li style="list-style-type:disc">Japanese hurry to expand their territory in the Pacific</li></ul><ul id="8eb48fbe-b343-4540-91f8-683ef67ca65d" class="bulleted-list"><li style="list-style-type:disc">Began to focus on Midway</li></ul><ul id="85941984-1284-4bd0-9e0a-0d10ce4e75ba" class="bulleted-list"><li style="list-style-type:disc">1942, Midway was home to a brand new USA military base</li></ul><ul id="36f60489-1d56-4f3d-b893-7b7f1b8f6153" class="bulleted-list"><li style="list-style-type:disc">Japanese Navy, let by Yamamoto was worried about the speed and strength of USA wartime industry<ul id="ee59f470-07ac-4fb8-b93b-9aed29690bd8" class="bulleted-list"><li style="list-style-type:circle">Yamamoto “doesn’t take no for an answer”<ul id="0f2e2c97-30a3-4495-be83-10417eb26080" class="bulleted-list"><li style="list-style-type:square">He was also the guy that orchestrated the Pearl Harbour attack</li></ul></li></ul></li></ul><ul id="60d7abd8-b3be-4114-915d-b67adc873efc" class="bulleted-list"><li style="list-style-type:disc">Supreme commander ^^</li></ul><ul id="b12c263d-16c2-48a0-ac0f-ac0696df8eef" class="bulleted-list"><li style="list-style-type:disc">US naval forces need to be defeated quickly before they could ramp up into full production</li></ul><ul id="83f9e7ff-29ec-4467-9ac3-e2221a32fa64" class="bulleted-list"><li style="list-style-type:disc">Yamamoto’s whole strategy relies on a surprise attack<ul id="72dd06af-9672-4e8c-9cee-ca4172622084" class="bulleted-list"><li style="list-style-type:circle">Small force sent to the Aleutian islands, US will avert their forces to defent the Aleutians while Japan attacks Midway</li></ul></li></ul><ul id="57e3d93e-4b53-48c3-a763-3a38aef06aec" class="bulleted-list"><li style="list-style-type:disc">Midway invasion in 3 phases<ul id="60d44ccb-2980-4bb3-a9e2-39eeac48aa5c" class="bulleted-list"><li style="list-style-type:circle">1st Phase:<ul id="1377a0e0-8bac-48d0-bcc5-be70754d8410" class="bulleted-list"><li style="list-style-type:square">1st Carrier Strike Force attacks Midway Island by air <ul id="2a164b38-4927-492f-8f29-b7f20278163b" class="bulleted-list"><li style="list-style-type:disc">Let by Chuichi Nagumo</li></ul><ul id="de86225b-78d4-4e6d-8615-9dcd927c52d4" class="bulleted-list"><li style="list-style-type:disc">His fleet is built around four first line aircraft carriers<ul id="f69e5da9-eeaa-4dba-a5dc-ad45e657c1b4" class="bulleted-list"><li style="list-style-type:circle">Akagi, Kaga, Kiryu, Soryu </li></ul></li></ul></li></ul></li></ul><ul id="f6cfbac8-3b4c-46b0-b35c-c7f1713393f7" class="bulleted-list"><li style="list-style-type:circle">2nd Phase<ul id="b627afe5-610e-4c66-a8c8-bebb0295146a" class="bulleted-list"><li style="list-style-type:square">After the destruction of Midway’s forces, Yamamoto will bring in the land forces, led by Vice Admiral Nobutake Kondo<ul id="4ae41cad-44de-4be5-988e-0175c3604442" class="bulleted-list"><li style="list-style-type:disc">His ships will land 5000 soldiers on the island to crush any remaining American forces</li></ul></li></ul></li></ul><ul id="d10f85e3-df74-49fc-a9e1-09e7da4d3f0c" class="bulleted-list"><li style="list-style-type:circle">3rd Phase<ul id="88dea5c3-d56b-41e0-93e0-e5d0a92a3120" class="bulleted-list"><li style="list-style-type:square">Yamamoto expects American reinforces to arrive from Pearl Harbour, already diminished from Japanese forces in Aleutians</li></ul><ul id="c8eeb1f3-018e-4273-a6ff-0fcc0b431b56" class="bulleted-list"><li style="list-style-type:square">Any USA reinforcements that arrive in Midway would be easily sweeped away by the Japanese forces</li></ul></li></ul></li></ul><ul id="734fdd7e-734f-4e96-a54d-484a5fd238ab" class="bulleted-list"><li style="list-style-type:disc">Yamamoto expected this to shock the US and render them depleted / useless as their main strength would be at the Aleutian Island</li></ul><ul id="0adc0856-40d4-4fe8-918b-b18be03b2de9" class="bulleted-list"><li style="list-style-type:disc">Japanese Naval code gets deciphered, and they learn the time, size, and strategy of the impending Midway invasion before it happens</li></ul><ul id="740e8f13-b8b5-47a3-8f99-fd9c94590e71" class="bulleted-list"><li style="list-style-type:disc">Admiral Chester Nimitz will fight in the battle, mainly in the air keeping his carriers well out of striking distance of the Japanese navy</li></ul><ul id="9e4e788d-7ce1-4743-a979-5779fc3ff976" class="bulleted-list"><li style="list-style-type:disc">Nimitz’s three carriers are split into two groups <ul id="668aa3b7-fd3a-44f9-87ba-0699275cddfd" class="bulleted-list"><li style="list-style-type:circle">Task force 17 is led by admiral Jack Fletcher, who is also given command from his flagship, the <span style="border-bottom:0.05em solid">USS Yorktown</span></li></ul><ul id="51d88dd7-6823-4f36-89de-d1d58a31fb3b" class="bulleted-list"><li style="list-style-type:circle">Task force 16 is led by Raymond Spruance</li></ul></li></ul><ul id="4fbae79f-bd58-4d93-ae87-5d43cf9cca51" class="bulleted-list"><li style="list-style-type:disc">USA aim is to launch the attack with the airforce, keeping their carriers out of the way</li></ul><ul id="0d786ac5-04c8-47a8-ab3e-c8e0de3e8e23" class="bulleted-list"><li style="list-style-type:disc">Yamamoto believes he has the Americans cornered, but really Nimitz has the Japanese trapped</li></ul><ul id="2b7a9a11-5d82-4c68-89c1-1dee2c36c924" class="bulleted-list"><li style="list-style-type:disc">It’s “a surprise attack against a surprise attack” - Mr. Friend</li></ul><ul id="6617406b-31cf-42e0-a39d-4df2880ba79b" class="bulleted-list"><li style="list-style-type:disc">On 3 June, Yamamoto strikes the Aleutian island, but Admiral Nimitz has stationed a small contingent to defend the Aleutians, saving the main forces to defend Midway</li></ul><ul id="7ae413fa-4dfe-4730-9219-7008b0cc5637" class="bulleted-list"><li style="list-style-type:disc">As Yamamoto approaches Midway, he receives intelligence suggesting there may be American carriers in the area</li></ul><ul id="8d7f668c-f313-447b-85bb-7f6fed55c658" class="bulleted-list"><li style="list-style-type:disc">Yamamoto wants to inform the ships further ahead, but they were suspicious of the Americans intercepting their radio communications, so he maintained radio silence (a big failure on Yamamotos part oops)</li></ul><ul id="66ca9990-4299-4a4d-9f61-28359ee09cde" class="bulleted-list"><li style="list-style-type:disc">Meanwhile at Midway, US forces prepare for the Japanese attack. Reid spots the Japanese forces around 9am. He thinks it is the first Japanese fleet, but it is actually Kondo&#x27;s ships that were supposed to attack Midway in the 2nd Phase </li></ul><ul id="3c0c06da-79fe-4dc1-92fb-c26601b732cf" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>This is the first military engagement of the battle</strong></span></li></ul><ul id="4486fdbc-daf8-4ba4-bf77-95e8baf7ed48" class="bulleted-list"><li style="list-style-type:disc">Kondo, adhering to the radio silence policy, doesn’t tell Nagumo about the bombing, so Nagumo has no idea that it happened </li></ul><ul id="b3a386d5-dd88-4a21-81cc-ebf7f97c9c7d" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Misunderstanding of the situation and not being flexible with their war plan</strong></span></li></ul><ul id="232f71a5-8b6f-43b5-ab49-43e547216d60" class="bulleted-list"><li style="list-style-type:disc">On June 4, 15 american b-17 bombers take off from midway to search for and attack any Japanese naval targets. Nagumo shortly afterwards launches his planned Midway attack<ul id="b197c90d-5788-4f84-beb1-5216e7f5bfdc" class="bulleted-list"><li style="list-style-type:circle">108 aircraft</li></ul></li></ul><ul id="3eff46a1-2fbf-4f55-a437-7c1a0b5ab3dd" class="bulleted-list"><li style="list-style-type:disc">The USA launches 4 different groups of aircraft to defend</li></ul><ul id="05876620-e36a-4559-b161-945d92fdfdc4" class="bulleted-list"><li style="list-style-type:disc">At 5;56AM the air raid siren starts as Japanese planes are spotted</li></ul><ul id="b955793c-c929-4945-9cdc-d6b17c7cc09e" class="bulleted-list"><li style="list-style-type:disc">Squads of F2A buffalo and wildcat fighters engage the Japanese fighters at 6:16am</li></ul><ul id="304a9f58-62f9-4995-b2d9-dd46c7089ae2" class="bulleted-list"><li style="list-style-type:disc">Japanese pilots swiftly bomb Midways hangars, runways, hospital, and power plant</li></ul><ul id="b110114f-f9c3-4b7c-9990-b4c201729d57" class="bulleted-list"><li style="list-style-type:disc">The American fighters are outnumbered, but still manage to defend their base</li></ul><ul id="315e7119-fe40-4552-9a74-f1640e5518d3" class="bulleted-list"><li style="list-style-type:disc">After 27 minutes of attack, the first phase of Yamamoto’s attack</li></ul><ul id="e36261db-46af-460b-ae21-19f4c3467a62" class="bulleted-list"><li style="list-style-type:disc">At 7:05, a Japanese pilot breaks the radio silence policy to inform Nagumo that another air attack is needed</li></ul><ul id="8dc40f9c-6eca-4981-920b-52351e38b3fb" class="bulleted-list"><li style="list-style-type:disc">Nagumo is faced with one of the most consequential decisions of the battle: does he launch another bombing attack on Midway, or does he prepare for a potential naval battle with aircraft carriers with USA?</li></ul><ul id="a4253e99-f80c-48f0-94fc-2a384f781c4f" class="bulleted-list"><li style="list-style-type:disc">Before he can decide, American bomb squadrons start raiding his fleet</li></ul><ul id="19c451ec-ab1a-4850-8e8b-8747d839bb90" class="bulleted-list"><li style="list-style-type:disc">As Nagumo tries to figure out what to do next, the American submarine <em>Nautilus </em>emerges from behind his fleet</li></ul><ul id="f975475d-f0a5-4b83-9c31-933893027823" class="bulleted-list"><li style="list-style-type:disc">Nagumo still has to make his decision, which he does at 7:15<ul id="1387e98e-7817-4724-bcf1-ab94f2bf6f3f" class="bulleted-list"><li style="list-style-type:circle">He will rearm his planes with bombs and prepare for a 2nd attack on Midway</li></ul><ul id="0e4d28ca-39d6-4dbf-88d9-267d0e4c1b87" class="bulleted-list"><li style="list-style-type:circle">13 minutes later, a Japanese scout spots 10 American ships off Midway</li></ul><p id="5f47867b-b5b8-46f8-81ff-7bb8ebaafbc8" class="">
+</p></li></ul><ul id="f02a9882-d944-4f32-85ce-eb9965adc42c" class="bulleted-list"><li style="list-style-type:disc">There weren’t supposed to be any ships ^</li></ul><ul id="a7267c0d-ffec-4d3e-815d-03be35c4cb4e" class="bulleted-list"><li style="list-style-type:disc">USA pilots continue attacking his fleet, he orders his crew to stop arming planes and instead start attacking the pilots there</li></ul><ul id="e3265a87-9401-4bb2-87ca-7997a9458f53" class="bulleted-list"><li style="list-style-type:disc"><em>Enterprise </em>and <em>Hornet</em> are busy launching 116 aircraft to attack Nagumo’s fleet</li></ul><ul id="0df05a96-eaa2-4ae3-872f-fb1f87761c80" class="bulleted-list"><li style="list-style-type:disc">8:20, Nagumo receives confirmation of at least 1 american aircraft carrier in the area</li></ul><ul id="cc182152-4b72-408d-98d6-c7e7ad4b0c24" class="bulleted-list"><li style="list-style-type:disc">He can’t act until his bombers return from Midway</li></ul><ul id="f49bbd86-f065-4eda-8c53-5f54d596fd5e" class="bulleted-list"><li style="list-style-type:disc">Yamamoto also receives the report of the American carrier </li></ul><ul id="4f801a6a-7ff8-4baa-ad44-986770a17c3f" class="bulleted-list"><li style="list-style-type:disc">expecting Nagumo to attack immediately, he chooses not to interfere and allows the battle to play out on its own</li></ul><ul id="4f53ced4-b9fd-453c-bf2d-3e5753b9db95" class="bulleted-list"><li style="list-style-type:disc">Nagumo’s bombers finally return, and he orders his fleet to redirect towards the one american carrier he knows of</li></ul><ul id="bb316608-4c27-46cb-8846-9f9a9c8209c6" class="bulleted-list"><li style="list-style-type:disc">The first squadrom of American divebombers arrives from the <em>Hornet</em></li></ul><ul id="bb35649c-b601-487b-bcda-bf759f899490" class="bulleted-list"><li style="list-style-type:disc">All 15 are shot down, but two more groups arrive right after</li></ul><ul id="2965faac-3ba6-4b25-9021-85ed11179aa1" class="bulleted-list"><li style="list-style-type:disc">Of the 26 Devastators sent in, only 6 return  - the Americans appear overmatched</li></ul><ul id="e32760a1-5c77-41f9-b87d-f98911e0782d" class="bulleted-list"><li style="list-style-type:disc">The japanese take time to refuel and rearm their fighters, when out of nowhere 26 american divebombers attack the <em>Kaga</em></li></ul><ul id="d30e9fe4-1df7-444f-adbd-df078f3d461b" class="bulleted-list"><li style="list-style-type:disc">Admiral McClusky has a mission to attack the Japanese carriers, but when they arrived at the supposed location there were no enemy ships in sight. Dangerously low on fuel, he was unable to contact his advisors (radio silence)</li></ul><ul id="2bc394a8-0427-4f90-97ce-86a422eec4d3" class="bulleted-list"><li style="list-style-type:disc">He could try to return, or make one last stab at the Japanese fleet.</li></ul><ul id="13132f1d-1d83-456c-adab-946f332842e4" class="bulleted-list"><li style="list-style-type:disc">He turns his squadron to attack where he thinks the Japanese fleet might be. </li></ul><ul id="2d50e5fa-c76c-4219-b3db-dca3622f17b5" class="bulleted-list"><li style="list-style-type:disc">In the next 5 minutes, they find the Japanese fleet and begin to drop bombs - 9 on their ships</li></ul><ul id="eb090d8e-8acf-4621-8d50-d1e8aae22b42" class="bulleted-list"><li style="list-style-type:disc">One strikes the gasoline truck on the Kaga, effectively destroying it</li></ul><ul id="7c239993-c1fd-4ecc-b497-2f9266416081" class="bulleted-list"><li style="list-style-type:disc">Within minutes, fighters and bombers from the Yorktown hit Soryu, engulfing the entire ship in flames</li></ul><ul id="81246096-9796-4cbe-8224-6108f8736a41" class="bulleted-list"><li style="list-style-type:disc">US fighters strike the Akagi’s deck, destroying planes waiting to take off</li></ul><ul id="a975a170-3bce-40a0-983c-11c2cd260f93" class="bulleted-list"><li style="list-style-type:disc">Nagumo is forced to transfer off of the Akagi to the Nagara, and radios Yamamoto to update him on the situation</li></ul><ul id="639eb2d5-e152-4675-baf7-8550cbbef4cc" class="bulleted-list"><li style="list-style-type:disc">The only carrier remaining is the Hiryu, and only because it was ahead</li></ul><ul id="fdd777aa-1e7f-4567-a10f-cfbc71ef3b42" class="bulleted-list"><li style="list-style-type:disc">He launches one more attack from the Hiryu which is intercepted by American fighter Jets, but make it through and manage to severely damage the Yorktown - it is still functional though</li></ul><ul id="8fbdd066-b08f-4281-96ab-7b58ff2cc323" class="bulleted-list"><li style="list-style-type:disc">Meanwhile, a second wave launches from Hiryu headed to strike the Yorktown one more time. they are intercepted by Americans once more, taking down a few planes. 5 Japanese torpedo bombers make it through and land two blows on the Yorktown, nearly sinking the ship</li></ul><ul id="c358527e-0f01-4051-b0dd-e51776c0e6e0" class="bulleted-list"><li style="list-style-type:disc">All available US divebombers are ordered to attack the Hiryu. The fighers are left behind to defend the carriers</li></ul><ul id="2065238b-9d66-494d-92de-ef2ca90698f6" class="bulleted-list"><li style="list-style-type:disc">The american bomber group dives on the Hiryu, which is left disabled</li></ul><ul id="7a90be87-72f6-48d0-b480-7ae5aae59e5d" class="bulleted-list"><li style="list-style-type:disc">Major combat is now over at this point. Small clashes continue over the next two days, but the Americans have decidedly won the Battle of Midway. Both sides sustained massive losses, but Japan lost way more</li></ul><ul id="d34257c1-8356-4fa1-a928-6c01e2373f4a" class="bulleted-list"><li style="list-style-type:disc">Japan lost 2500 servicemen, 292 aircraft, 1 heavy cruiser, and 4 aircraft carriers </li></ul><ul id="3e0dcee8-2bea-4a18-aa9d-490f7073575a" class="bulleted-list"><li style="list-style-type:disc">USA lost 1 aircraft carrier, 1 desrtoyed, 145 aircraft, and 307 servicemen</li></ul><ul id="6b325416-9079-4b40-87ca-812d613b57c0" class="bulleted-list"><li style="list-style-type:disc">Impact:<ul id="9d4ecabc-ce65-4a3a-87e2-a8817cdff23e" class="bulleted-list"><li style="list-style-type:circle">The Japanese abandoned their plan to expand into the Pacific, and would remain on the defense for the rest of WWII</li></ul><ul id="340fab03-b541-4f37-92f1-a1846c04e2db" class="bulleted-list"><li style="list-style-type:circle">Demonstrated the indispensible power of code breaking and tactics</li></ul><ul id="192c6016-e328-4bba-bce8-3eb0fe81c270" class="bulleted-list"><li style="list-style-type:circle">Japanese military had lost a lot of morale</li></ul><ul id="9458f1d1-8d78-4df8-b659-5b67eabbcab2" class="bulleted-list"><li style="list-style-type:circle">The US military and public were energised for the first time since Pearl Harbour</li></ul><ul id="115f2c37-46ab-4c8c-9c04-35856221e43c" class="bulleted-list"><li style="list-style-type:circle">The Japanese <span style="border-bottom:0.05em solid">could be</span> defeated!!!</li></ul><p id="f45112c0-49c6-430a-81e0-5631de6ad8f9" class="">
+</p><p id="ceb24acc-11d0-4d8b-9e56-9c52d82113a2" class="">“The Japanese could be defeated and the Americans would be the ones to do it”</p><blockquote id="b18ff0ff-5834-4228-b049-fd047f14cbdd" class="">“The Japanese could be defeated and the Americans would be the ones to do it”
+”US military and the American public were energised for the first time since Pearl Harbour” </blockquote><p id="6f653715-3035-4c35-9b1d-bcda70d28423" class="">    - Christian Steiner </p><p id="b6d53df8-dbf2-4c56-9b00-74bb8dfd7651" class="">
+</p><p id="e49ec130-a932-4f60-92a4-633bbf9259ac" class="">
+</p><p id="5cc16153-75c6-4303-854b-0218777ab4f6" class="">
+</p><p id="1121904f-9d6a-410d-92ea-58505a2136ec" class="">
+</p><p id="fb5c661d-ac6b-4d5e-8e31-58a5e235d3dc" class="">
+</p></li></ul></div></article></body></html>

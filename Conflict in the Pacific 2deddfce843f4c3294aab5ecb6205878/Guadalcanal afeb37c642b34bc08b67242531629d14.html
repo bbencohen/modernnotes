@@ -1,0 +1,671 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Guadalcanal</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="afeb37c6-42b3-4bc0-8b67-242531629d14" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🏝️</span></div><h1 class="page-title">Guadalcanal</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M7.01356 14.0001C8.8042 14.0001 10.5958 13.3107 11.9575 11.9324C14.681 9.21201 14.6808 4.7603 11.9571 2.04013C9.23336 -0.680043 4.77573 -0.680043 2.05199 2.04013C0.727519 3.36277 0 5.13301 0 6.99553C0 8.8764 0.727811 10.6285 2.05199 11.9509C3.43207 13.3106 5.22243 14.0001 7.01356 14.0001ZM3.72947 7.00914V8.461V8.65543H3.92382H5.34563H8.2794H8.4738V8.461V5.52541V3.37947V3.18502H8.2794H6.82747H6.63307V3.37947V6.81467H3.92382H3.72947V7.00914ZM1.83985 6.99553C1.83985 5.61698 2.38099 4.32597 3.36061 3.3477C5.36746 1.34337 8.64803 1.34062 10.6585 3.33944C10.6613 3.34219 10.6639 3.34494 10.6668 3.3477C12.676 5.3546 12.6763 8.63642 10.6668 10.6434C8.65705 12.6504 5.37031 12.6504 3.36061 10.6434C2.38099 9.66506 1.83985 8.37408 1.83985 6.99553Z"></path></svg></span>Created</th><td><time>@May 26, 2022 12:38 PM</time></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Class</th><td><span class="selected-value select-value-color-yellow">Focus of Study</span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Type</th><td></td></tr><tr class="property-row property-row-checkbox"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCheckbox"><path d="M0,3 C0,1.34314 1.34326,0 3,0 L11,0 C12.6567,0 14,1.34314 14,3 L14,11 C14,12.6569 12.6567,14 11,14 L3,14 C1.34326,14 0,12.6569 0,11 L0,3 Z M3,1.5 C2.17139,1.5 1.5,2.17157 1.5,3 L1.5,11 C1.5,11.8284 2.17139,12.5 3,12.5 L11,12.5 C11.8286,12.5 12.5,11.8284 12.5,11 L12.5,3 C12.5,2.17157 11.8286,1.5 11,1.5 L3,1.5 Z M2.83252,6.8161 L3.39893,6.27399 L3.57617,6.10425 L3.92334,5.77216 L4.26904,6.10559 L4.44531,6.27582 L5.58398,7.37402 L9.28271,3.81073 L9.45996,3.64008 L9.80664,3.3056 L10.1538,3.63989 L10.3311,3.81067 L10.8936,4.35303 L11.0708,4.52399 L11.4434,4.88379 L11.0708,5.24353 L10.8936,5.41437 L6.1084,10.0291 L5.93115,10.2 L5.58398,10.5344 L5.23682,10.2 L5.05957,10.0292 L2.83057,7.87946 L2.65283,7.70801 L2.27832,7.34674 L2.6543,6.98694 L2.83252,6.8161 Z"></path></svg></span>Reviewed</th><td><div class="checkbox checkbox-off"></div></td></tr></tbody></table></header><div class="page-body"><h1 id="b6ae0218-c64d-44fe-8bbc-746a2752bd21" class="">Guadalcanal August 7 1942 </h1><h2 id="2c594e72-76a7-4d85-931b-ff5676ab5ea3" class="">“The Island of Death”</h2><p id="336f6941-1411-4ef3-b0eb-4010a7a634ab" class=""><span style="border-bottom:0.05em solid"><strong>New Japanese Strategy —&gt; New strategy to occupy territory/islands because their aircraft carriers are done. Their new aim/strategy is to occupy islands to use as air fields which can act as fixed-location aircraft carriers.</strong></span></p><ul id="98990bc2-0408-46fb-92f4-4fe65ae0e575" class="bulleted-list"><li style="list-style-type:disc"><strong>Turning point: </strong>First major offensive by Allied forces against the Empire of Japan<ul id="404106c4-bd11-4561-879e-568691291cef" class="bulleted-list"><li style="list-style-type:circle"><span style="border-bottom:0.05em solid"><strong>Counter Argument: </strong></span><ul id="91ecb276-a4ca-449c-b9fd-1c290b7e0d16" class="bulleted-list"><li style="list-style-type:square">Doolittle raids </li></ul><ul id="eb74e4d3-6c5b-4935-b9ca-7f9062e86bdf" class="bulleted-list"><li style="list-style-type:square">Midway was kind of a US offensive because even though Japan did the first attack the US went ahead and was stationed and ready to launch into combat at any moment </li></ul></li></ul></li></ul><ul id="d5e5d921-b58b-4f00-8dcc-cc9fde5493fa" class="bulleted-list"><li style="list-style-type:disc">August 7, 1942: Allied forces (mostly American) landed on the islands of Guadalcanal, Tulagi, and Florida</li></ul><ul id="883e6dbc-9c97-4918-8a43-89d127f518b2" class="bulleted-list"><li style="list-style-type:disc">Japanese were attempting to build an airfield on the island to cut off communications between USA and Australia</li></ul><ul id="cc14c922-4b1d-43b3-babb-0cd1bc94cf49" class="bulleted-list"><li style="list-style-type:disc">By June 1942 there were an estimated 3000 Japanese soldiers on the island of Guadalcanal.</li></ul><ul id="6ef32b8e-0b0c-477b-b7de-4aefc85121f3" class="bulleted-list"><li style="list-style-type:disc"><strong>Turning point: </strong>Allied control thought that they could do better to protect Australia from a Japanese invasion</li></ul><ul id="6373a84f-7be0-482c-8a56-7bb5ea7a607e" class="bulleted-list"><li style="list-style-type:disc">Protect the Allied built=up in Australia acting as a springboard for a major assault on the Pacific fortress of Japan</li></ul><ul id="b2996fc8-1a4b-4f1a-a1ca-9e72bb5227d6" class="bulleted-list"><li style="list-style-type:disc"><strong>Turning point: </strong>Japanese were failing in the naval department, Americans had reacjed / surpassed Japanese Naval supremacy. The Japanese attempted to build an airfield on Guadalcanal</li></ul><ul id="2d6d52b2-34ac-471b-9d0f-8682be9cead5" class="bulleted-list"><li style="list-style-type:disc">The industrial capacity of USA has tripled by this point since 1939, they have more resources and weapons that are being absolutely flooded into the South Pacific </li></ul><h1 id="1c751641-0cea-48fa-83e1-fa2a61e09dec" class="">Twin Drives</h1><ul id="cd27c41b-749c-4982-9bb8-cbc19ced355e" class="bulleted-list"><li style="list-style-type:disc">Chief of Naval Operations Admiral Ernest King favoured a drive across the cenrtal Pacific moving toward Japan over the coral atolls scattered across the Pacific<ul id="f8bae91d-5184-4e52-833d-ea1a1bef02a3" class="bulleted-list"><li style="list-style-type:circle">Take advantage of the ability to leap across vast distances </li></ul></li></ul><ul id="4af0e6fe-d252-4a1c-948c-69b2794330f0" class="bulleted-list"><li style="list-style-type:disc">MacArthur favoured an advance across the South Pacific via New Guinea and the philippines<ul id="fbcc0c2e-74a4-4140-8046-036a3d4b7e72" class="bulleted-list"><li style="list-style-type:circle">Meet obligations to Filipinos</li></ul><ul id="80406cdf-ed8a-46ff-8b06-b56776600734" class="bulleted-list"><li style="list-style-type:circle">Maintain pressure against the retreating Japanese</li></ul><ul id="933d0584-d12d-4420-9080-45e00a7d2f3c" class="bulleted-list"><li style="list-style-type:circle">Protect against a renewed threat against Australia</li></ul></li></ul><h1 id="59d9dce5-764b-4435-8180-8a828ef8e8d7" class="">Strategies and Tactics</h1><p id="609db31e-1a65-4e7c-8a41-0d6b04846390" class=""><span style="border-bottom:0.05em solid"><strong>Japanese</strong></span></p><ul id="042a56d3-d5d3-4dee-b5dd-3dcc32e6d3a8" class="bulleted-list"><li style="list-style-type:disc">Aimed to take the defensive position (Turning point, this is the first time they have done this in the war)</li></ul><ul id="1f68bc69-1be6-4bab-8242-4f1715253eb3" class="bulleted-list"><li style="list-style-type:disc">Troops consisted of conscripted Koreans (the Koreans were occupied by the Japanese and they hated being occupied by Japan. Turning point, Japan is stretched out too thin and they are no longer fighting their own battles. Also the Koreans don’t want to fight for Japan)</li></ul><ul id="1d2c8318-b587-442b-a518-ce92986bf53a" class="bulleted-list"><li style="list-style-type:disc">After Midway, the importance of New Caledonia and Fiji was greater than ever, but its available force had shrunk</li></ul><ul id="e20827ea-42dc-4786-aada-debae650b092" class="bulleted-list"><li style="list-style-type:disc">Had to move away from large-scale carrier operations (Turning point)</li></ul><ul id="5525a2fd-e15d-44ef-8d60-24251a28ef08" class="bulleted-list"><li style="list-style-type:disc">Would aim to target naval vessels with land based aircraft (turning point ^^)</li></ul><ul id="bb038eaf-494d-402d-8acd-93f5205e5547" class="bulleted-list"><li style="list-style-type:disc">Airfields built on islands enabled aircraft to block critical passages and make enemy offensives dangerous</li></ul><p id="1abbfc07-0a67-4106-8c58-bba0606db5b8" class=""><span style="border-bottom:0.05em solid"><strong>American strategy</strong></span></p><ul id="cb77daf2-d95e-46da-8f4c-9c3049aa76ee" class="bulleted-list"><li style="list-style-type:disc">Neutralise Japan’s land-based aircraft and take the islands as bases for their own aircraft</li></ul><ul id="d7f06c18-9b8e-4140-8cd5-366a6b77373f" class="bulleted-list"><li style="list-style-type:disc">The US Navy supported troops with firepower as they landed on islands, blocking forces for hundreds of miles around</li></ul><ul id="24fe9cf5-7d84-4d68-95b3-dcf18610d0e5" class="bulleted-list"><li style="list-style-type:disc">Island-hopping strategy movement and establishment of mini military bases on islands</li></ul><p id="959a530c-a263-4c05-94ff-3bb5875ac048" class=""><span style="border-bottom:0.05em solid"><strong>US &amp; AUS</strong></span></p><ul id="3fd4e626-4a50-4d8f-93c2-c3a598d4f9b5" class="bulleted-list"><li style="list-style-type:disc">Three carriers gave air support (the <em>Saratoga</em>, the <em>Wasp</em>, and the <em>Enterprise</em> guarded by the battleship USS North Carolina. Eight cruisers from America and Australia guarded the actual landing craft as they approached the beaches of Guadalcanal) (Turning point)</li></ul><ul id="bd0db0bb-9ecd-4158-be42-ad81ce31c926" class="bulleted-list"><li style="list-style-type:disc">Tactical surprise</li></ul><ul id="2aee0d9b-1aac-4704-9c6c-151c15e7a22e" class="bulleted-list"><li style="list-style-type:disc">US waited until airbase almost complete then appropriated it</li></ul><ul id="ce863b86-0062-4756-a4b1-82fe54dc1f2f" class="bulleted-list"><li style="list-style-type:disc">The attack on Guadalcanal is a tactical surprise for Japan, they surprise Japan while they are trying to establish an air base </li></ul><ul id="1ced828c-b52a-4ecb-bd33-96883e4b4871" class="bulleted-list"><li style="list-style-type:disc">The US were literally just sitting there waiting until it was pretty much done so they could wipe out the soldiers and use the airbase themselves </li></ul><h1 id="ef9eaac5-8321-4000-bbb7-5656daa93b57" class="">Island Hopping - Allied Strategy</h1><ul id="9101be1a-55f7-48da-9037-50b159483f10" class="bulleted-list"><li style="list-style-type:disc">Skipping over heavily fortified islands in order to seize lightly defended locations that could support the next advance</li></ul><ul id="47801610-5a66-41ae-a133-bdaa6a00a45c" class="bulleted-list"><li style="list-style-type:disc">Isolated strongholds while the defenders were left to weaken from starvation and disease. Ise thje vast Pacific distances as an ally while creeping in on Japan</li></ul><h1 id="fc8577e6-e885-41a7-b40b-c7b050583b60" class="">The Navajo Code Talkers</h1><ul id="81b5a061-2c95-4726-9eb3-a1c7369aed71" class="bulleted-list"><li style="list-style-type:disc">While Americans were able to break the Japanese code, Americans used the Navajo code without fear of Japan breaking it.</li></ul><ul id="988a5210-e41b-4bea-9f34-d7de7d041762" class="bulleted-list"><li style="list-style-type:disc">Around 400 navajo were recruited</li></ul><ul id="22529ff5-e178-41d8-9dc3-83bb763634ef" class="bulleted-list"><li style="list-style-type:disc">Only about 25 non-Navajo people in the entire world could speak the language</li></ul><ul id="3c12b9c7-dd35-44d4-9032-e5f015d5ffac" class="bulleted-list"><li style="list-style-type:disc">Made up words for terms that didn’t exist in their language (names of birds meant “airplanes” and the word “egg” actually meant “bomb”)</li></ul><h1 id="9c9fe2bd-85c8-48ce-b77d-03eb45267d78" class="">Turning point?</h1><ul id="5b429000-b214-4e4e-b89b-8aaf1cedf333" class="bulleted-list"><li style="list-style-type:disc">America’s most <span style="border-bottom:0.05em solid"><strong>powerful amphibious force</strong></span> (change in tactics) ever assembled solifidying island hopping strategy </li></ul><ul id="9be5cb21-e28d-44ed-a7bf-f4542eaab018" class="bulleted-list"><li style="list-style-type:disc">Americans <strong><span style="border-bottom:0.05em solid">expanded their perimeter </span></strong>(offensive shift) to continuously respply their positions with weapons, ammunition, and supplies, thereby constantly sustaining a degree of combat strength which was superior to the Japanese</li></ul><ul id="486cc699-5db1-4d60-8e79-0858d56d9dcc" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Set the tone for a new type of batttle</strong></span> - land/sea air battle of attratition</li></ul><ul id="1d7cb539-0c59-4b53-a756-a33f36b3d46a" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Shattered the myth of Japanese invincibility</strong></span>, particularly in the Jungle<ul id="5315b6eb-a111-480f-bd1e-a9d21a643349" class="bulleted-list"><li style="list-style-type:circle">In Malaya they literally won a battle on bicycles </li></ul></li></ul><ul id="ae9a9ed5-ff95-4bf4-8816-baba211ac22d" class="bulleted-list"><li style="list-style-type:disc">Ended Japanese strategic operations</li></ul><ul id="ed4b5418-3d18-488c-9201-131def487e30" class="bulleted-list"><li style="list-style-type:disc">U.S. no longer had to defend the line of supply to Australia, and American troops surged to Australian bases </li></ul><ul id="27dfcd98-5862-4c63-87ef-b9628ee9ddde" class="bulleted-list"><li style="list-style-type:disc">That Marine, Navy, and Army aviators took out elite Japanese air crews, allowing America to achieve air superiority more easily in future battles</li></ul><ul id="d53e83c4-767d-4d53-9752-8c35bca6280a" class="bulleted-list"><li style="list-style-type:disc">US industrial supremacy becomes apparent (nothing to do with Guadalcanal, but a turning point early in the war because it makes it clear that Japan will not match US industrial capacity)</li></ul><ul id="6082f44b-30f5-4545-9cd2-9faf141f884b" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>FIRST GAPS IN THE DEFENSIVE PERIMETER OF THE CO-PROSPERITY SPHERE WERE APPEARING</strong></span></li></ul><blockquote id="e9333880-f96a-4195-b9a4-8c5c6263855f" class="block-color-red">“The Japanese war machine truly grinded to a halt” - O’Neill</blockquote><h1 id="e4639deb-8b91-4115-bbb2-ddecfefff3da" class="">Impacts</h1><ul id="85c9a343-3d1a-4964-9731-d77730aa21c7" class="bulleted-list"><li style="list-style-type:disc">60k US Marines and soldiers killed about 20k of the 31k Japanese troops on the island</li></ul><ul id="018ee366-f8fa-4c2b-8244-96ca22fed853" class="bulleted-list"><li style="list-style-type:disc">One, the <em>USS Wasp, </em>was sunk near Guadalcanal on Sep 15 1942 by a Japanese sub. The <em>USS Hornet</em> was sunk near the Santa Cruz islands, to the southeast of Guadalcanal. <em>Hornet</em> was lost during a major battle with a Japanese carrier fleet that was pulling back from Guadalcanal</li></ul><ul id="0bca2506-792e-4d8f-9ec1-6a67d8ccc70a" class="bulleted-list"><li style="list-style-type:disc">The US had a 10% casualty rate and only 24/3600 Japanse soldiers surrendered - the Japanese also lost highly trained pilots that were irreplacable </li></ul><p id="68a870cb-2f19-42b7-b55c-b4965aa3ade6" class="">
+</p><p id="a486aa23-3ae9-44e9-b905-29e81dd73098" class="">extra bits mr friend wrote:</p><ul id="e3b7684e-a0a6-481c-9c1c-58a36db0f2df" class="bulleted-list"><li style="list-style-type:disc">it was the first decisive USA victory </li></ul><ul id="f00f95a0-7dc6-4129-b573-f0346920c487" class="bulleted-list"><li style="list-style-type:disc">Casualty rates increase due to nature of warfare</li></ul><p id="c6fce2e0-d26f-4e88-944e-5db564103fc1" class="">
+</p></div></article></body></html>

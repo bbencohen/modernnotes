@@ -1,0 +1,670 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Effect of the War on the Home Fronts in Japan and Australia</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a011134a-5788-46f1-930c-31c922ab80fa" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🏠</span></div><h1 class="page-title">The Effect of the War on the Home Fronts in Japan and Australia</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M7.01356 14.0001C8.8042 14.0001 10.5958 13.3107 11.9575 11.9324C14.681 9.21201 14.6808 4.7603 11.9571 2.04013C9.23336 -0.680043 4.77573 -0.680043 2.05199 2.04013C0.727519 3.36277 0 5.13301 0 6.99553C0 8.8764 0.727811 10.6285 2.05199 11.9509C3.43207 13.3106 5.22243 14.0001 7.01356 14.0001ZM3.72947 7.00914V8.461V8.65543H3.92382H5.34563H8.2794H8.4738V8.461V5.52541V3.37947V3.18502H8.2794H6.82747H6.63307V3.37947V6.81467H3.92382H3.72947V7.00914ZM1.83985 6.99553C1.83985 5.61698 2.38099 4.32597 3.36061 3.3477C5.36746 1.34337 8.64803 1.34062 10.6585 3.33944C10.6613 3.34219 10.6639 3.34494 10.6668 3.3477C12.676 5.3546 12.6763 8.63642 10.6668 10.6434C8.65705 12.6504 5.37031 12.6504 3.36061 10.6434C2.38099 9.66506 1.83985 8.37408 1.83985 6.99553Z"></path></svg></span>Created</th><td><time>@June 2, 2022 2:18 PM</time></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Class</th><td><span class="selected-value select-value-color-yellow">Focus of Study</span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Type</th><td><span class="selected-value select-value-color-green">Civilians at War</span></td></tr><tr class="property-row property-row-checkbox"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCheckbox"><path d="M0,3 C0,1.34314 1.34326,0 3,0 L11,0 C12.6567,0 14,1.34314 14,3 L14,11 C14,12.6569 12.6567,14 11,14 L3,14 C1.34326,14 0,12.6569 0,11 L0,3 Z M3,1.5 C2.17139,1.5 1.5,2.17157 1.5,3 L1.5,11 C1.5,11.8284 2.17139,12.5 3,12.5 L11,12.5 C11.8286,12.5 12.5,11.8284 12.5,11 L12.5,3 C12.5,2.17157 11.8286,1.5 11,1.5 L3,1.5 Z M2.83252,6.8161 L3.39893,6.27399 L3.57617,6.10425 L3.92334,5.77216 L4.26904,6.10559 L4.44531,6.27582 L5.58398,7.37402 L9.28271,3.81073 L9.45996,3.64008 L9.80664,3.3056 L10.1538,3.63989 L10.3311,3.81067 L10.8936,4.35303 L11.0708,4.52399 L11.4434,4.88379 L11.0708,5.24353 L10.8936,5.41437 L6.1084,10.0291 L5.93115,10.2 L5.58398,10.5344 L5.23682,10.2 L5.05957,10.0292 L2.83057,7.87946 L2.65283,7.70801 L2.27832,7.34674 L2.6543,6.98694 L2.83252,6.8161 Z"></path></svg></span>Reviewed</th><td><div class="checkbox checkbox-off"></div></td></tr></tbody></table></header><div class="page-body"><h1 id="5dbdbc73-3916-4f07-840e-6930f911f907" class="">Japan</h1><ul id="c265a8e7-3ea3-4a5a-9b60-203b9b38f5df" class="bulleted-list"><li style="list-style-type:disc">Poverty, bombings, and waiting for the end</li></ul><ul id="c694cb75-2f01-4992-939f-01f654e88fab" class="bulleted-list"><li style="list-style-type:disc">Men went to war and never came back</li></ul><ul id="670e920d-4851-4da7-8dbd-7fd4a17ebb1f" class="bulleted-list"><li style="list-style-type:disc">Newsreels and radio informed them of battles in far-off places</li></ul><ul id="e0725882-6e47-4c2f-9f6b-08090cd2d310" class="bulleted-list"><li style="list-style-type:disc">Ceremonies were held for soldiers in their hometowns before they were sent off</li></ul><ul id="bf4c853e-425a-44e3-809d-1636fca65d6f" class="bulleted-list"><li style="list-style-type:disc">Mournful gatherings were held when the ashes of those who died in battle were broght home</li></ul><p id="cd164665-d985-4273-9d04-1eede20fe658" class="block-color-yellow_background">War is celebrated - ceremonies, going-away-parties, mournful gatherings to commemorate the dead. It’s about glorifying soldiers that supported the war effort</p><ul id="faa53ab7-99d9-4ea6-b697-e5a859ebc7a2" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Total War</strong></span><ul id="e002b2c7-85a7-4107-b895-7ec257fd48b3" class="bulleted-list"><li style="list-style-type:circle">Different to trench war where the soldiers are just at the trenches fighting</li></ul><ul id="db4b0b17-e10d-4fce-abf7-a78a39396e8c" class="bulleted-list"><li style="list-style-type:circle">In total war, every single citizen was preparing for war and learning how to fight</li></ul><ul id="5b15c2cc-1d63-405f-a37c-a2cd5752ca2d" class="bulleted-list"><li style="list-style-type:circle"><span style="border-bottom:0.05em solid"><strong>Unrestricted war.</strong></span> anything goes, and the battlefield is just the whole world including cities etc.</li></ul><ul id="3a3418f9-3ffc-45ff-8f6e-5bf2e2c2270a" class="bulleted-list"><li style="list-style-type:circle">80% of war production</li></ul></li></ul><ul id="42477ac0-f987-475e-a6f4-dbe5a23ef461" class="bulleted-list"><li style="list-style-type:disc">Total war is much more prevalent in Japan than in Australia</li></ul><ul id="f55752d7-845b-4451-817a-78ed9d952d22" class="bulleted-list"><li style="list-style-type:disc">Japanese citizens and soldiers built underground bases in anticipation of their cities turning into battlefields</li></ul><ul id="033b96fe-d4da-4b46-9625-957873f9b75a" class="bulleted-list"><li style="list-style-type:disc">There is an ingrained doctrine that if you come home from war alive then there is no point fighting</li></ul><p id="a5a49949-89fe-4843-a9f7-fe1cdc05b398" class="">
+</p><h1 id="7542358b-b683-4926-92d4-fed18b4957da" class="">The World At War Notes</h1><ul id="d35fb105-75ba-4de4-9b23-c5c5bd855d1c" class="bulleted-list"><li style="list-style-type:disc">Japan comemmorates the disaster at Pearl Harbour while the Allies are celebrating</li></ul><ul id="33092059-8ffa-4ace-9fb7-b1dc0f6bc487" class="bulleted-list"><li style="list-style-type:disc">Victory after victory - Hong Kong, Malaya, Singapore</li></ul><ul id="d85c2cb1-8106-4661-8deb-cdec74981346" class="bulleted-list"><li style="list-style-type:disc">Prime Minister General Hideki Tojo → led his countrymen into war, now he promised them final victory</li></ul><ul id="c97881b6-3c79-4c2a-9a0b-8e892caa2ba2" class="bulleted-list"><li style="list-style-type:disc">“The nation will complete the final round of this conflict. To overthrow America and Britain we will fight until the last day”<ul id="e1a5a5eb-d23e-4718-832f-b359c39d018c" class="bulleted-list"><li style="list-style-type:circle">Government dominated by military because he is the prime minister and the general</li></ul></li></ul><ul id="a6beaf00-1523-459f-b86c-de73e7243cfc" class="bulleted-list"><li style="list-style-type:disc">This time, Japan was not an industrial power<ul id="11ff72b9-de30-46b7-bcaf-f93fe34a17f3" class="bulleted-list"><li style="list-style-type:circle">Industry was inferior to American/British production</li></ul></li></ul><ul id="3c12149f-8837-4a8c-a9f9-f114f040e246" class="bulleted-list"><li style="list-style-type:disc">The dedication on the home front would make the new Japanese Empire unassailable</li></ul><ul id="55e4ffb5-0db1-438c-ad73-044f7003b929" class="bulleted-list"><li style="list-style-type:disc">Propaganda videos shows planes bombing boats - all staged recreations but used to propagate Japanese success, especially to Japanese civilians → boosting morale</li></ul><ul id="2026055e-22f6-4bdd-bb7e-e584a6d2430a" class="bulleted-list"><li style="list-style-type:disc">News reels emphasised the humbling of “the arrogant whites”<ul id="1ddc8e4d-dac6-4e93-ad38-0066e3cdc61d" class="bulleted-list"><li style="list-style-type:circle">Convincing Japan of their own invincibility</li></ul></li></ul><ul id="d70ad6f0-f4f7-44ac-a370-4e8c698b90e5" class="bulleted-list"><li style="list-style-type:disc">“Japan was winning, and every day we heard over the radio all the victories, and the whole nation was very excited and that’s all I had at the time when I heard the news of the war. Immediately, all the big war songs and marches on the radio all day long. So, we are very excited and at home it was like a festival”</li></ul><ul id="82e2c2d5-2519-42d8-ba12-67e6475ea1da" class="bulleted-list"><li style="list-style-type:disc">War had been with the Japanese people for 10 years (since 1931 in China)<ul id="b6797f01-e4d0-4b8c-9b08-6fb4d1553057" class="bulleted-list"><li style="list-style-type:circle">Victory in the Pacific had been quick, giving them something to celebrate</li></ul></li></ul><ul id="0c9bbc49-48b9-40a6-bbfd-1d01c50db031" class="bulleted-list"><li style="list-style-type:disc">For years before Pearl Harbour, there had been air-raid drills all over Japan</li></ul><ul id="16018d78-eb69-4552-919c-9cf759301a0c" class="bulleted-list"><li style="list-style-type:disc">Part of the process of keeping war in motion was keeping the population prepared (city-wide drills, etc)</li></ul><ul id="67c1fe46-b057-4203-950d-4c0413f45e8d" class="bulleted-list"><li style="list-style-type:disc">At every neighbourhood, in schools, playing fields, and streets, citizens were trained by generals and other military figures</li></ul><ul id="a94ccb7a-b520-4219-8fd8-5fc53040c497" class="bulleted-list"><li style="list-style-type:disc">“If the nation was at war, children had to be ready for that too”</li></ul><ul id="5ae0ada3-c4fe-49ac-b2f7-005ef48ad42e" class="bulleted-list"><li style="list-style-type:disc">“High school children joined their air force for the day. If they were lucky they would be able to stay”</li></ul><ul id="2fce718b-6ba6-4699-9060-b1867ae8eb58" class="bulleted-list"><li style="list-style-type:disc">“The Emperor was divine, the country was invincible and consisted of a chosen race. Things like these were drummed into the children’s mind from the ground up”</li></ul><ul id="789239b9-a23c-4c01-9977-4332ec61b2a5" class="bulleted-list"><li style="list-style-type:disc">“For samurai, to die in battle was to fall in a moment of perfection, as the cherry blossom does”</li></ul><ul id="6c434318-45e8-4b1d-bf96-d573cc3d5de1" class="bulleted-list"><li style="list-style-type:disc">The worship of buddha had coexisted in Japan for centuries with the Shinto religion</li></ul><ul id="7bcbb94a-5b50-49fd-bcfd-3b63d0f93826" class="bulleted-list"><li style="list-style-type:disc">but, in the 1920s-30s the nationalists insisted that Shinto be made the state religion<ul id="00cf49a5-87a1-42dc-ad0f-553b78e9e94b" class="bulleted-list"><li style="list-style-type:circle">Shinto was pure, strictly Japanese</li></ul></li></ul><ul id="e813976d-907f-4d0e-a746-6d2c4fb1a5e6" class="bulleted-list"><li style="list-style-type:disc">The emperor was a god and a warrior chief, mystically believed to lead Japan to greatness by Shinto religion</li></ul><ul id="e90b3152-1a0e-4493-954d-589bf89feb49" class="bulleted-list"><li style="list-style-type:disc">“the ashes of Japan’s war-dead were sent home, packed in boxes”</li></ul><ul id="f04904f9-c999-4fb9-80f1-cf25f880e887" class="bulleted-list"><li style="list-style-type:disc">“Widows and mothers had no more cause for pride, no more right to tears than the day they were sent of. For sons and husbands to die in war was the highest honour and the highest duty to their nations”</li></ul><ul id="b3a060a8-ebb5-4bfb-9400-f2abe9459157" class="bulleted-list"><li style="list-style-type:disc">Women would stand on the streets of Tokyo to create warm clothes for the soldiers </li></ul><ul id="17672402-ca08-424c-a437-e5568ef304bd" class="bulleted-list"><li style="list-style-type:disc">Ceremonial, spiritual experience to go to war</li></ul><ul id="ee7bdbfd-758b-4f87-8ee3-ac8f883d3ff2" class="bulleted-list"><li style="list-style-type:disc">“I go to a lonely grave, far across the sea” they sing as they parade the leaving soldiers</li></ul><ul id="1fc75f80-1372-4bfa-83f8-e433af058c78" class="bulleted-list"><li style="list-style-type:disc">18 April 1942 - 16 bombers commanded by Doolittle set up for the first air raid on japan. (Doolittle raids)</li></ul><ul id="fab01bf6-45c2-4ba1-9e7e-b228c831a7b4" class="bulleted-list"><li style="list-style-type:disc">The American aim was to make a token, but strong demonstration of Japan’s vulnerability to air raids</li></ul><ul id="d3c830e5-440c-4d54-bd57-91a21fab0b77" class="bulleted-list"><li style="list-style-type:disc">In comparison to Australia, Japan gets completely destroyed by bombs and air raids</li></ul><ul id="2ff376dd-3441-4f42-8ffd-648c26b447f4" class="bulleted-list"><li style="list-style-type:disc">The firebombs during the air raids in Japan killed more people than the nuclear bombs did</li></ul><ul id="9941bbf3-09f6-47bb-9a13-d4e7ac4d0113" class="bulleted-list"><li style="list-style-type:disc">Towards the end of the war - 9 March 1944 - bombing raid on Tokyo created firestorm - killed about 90,000 and destroyed about 250000 homes creating 1.8 million homeless </li></ul><ul id="0a824dcf-68b6-4138-9e22-b95c22e43fb6" class="bulleted-list"><li style="list-style-type:disc">Air raid shelters became death traps </li></ul><h1 id="8577a8fe-0a88-4fab-a4cb-03ffcc86741b" class="">Australia</h1><ul id="6aab7fa9-0ed7-47d9-b0df-ca39ad7fab23" class="bulleted-list"><li style="list-style-type:disc">Australian fear of the “Asian Menace” - racism</li></ul><div id="97be6a55-461d-49eb-a2eb-ef0643ac5c9b" class="column-list"><div id="24641a0b-6e50-4665-813a-c6fbe109d8f3" style="width:50%" class="column"><ul id="a549b92a-b408-4731-89df-996e20729df1" class="bulleted-list"><li style="list-style-type:disc">Propaganda combined with racial arrogance to paint Singapore as the impregnable barrier to any Japanese expansion<ul id="c458e79d-bde5-4496-bf7a-0ef2634d7a32" class="bulleted-list"><li style="list-style-type:circle">Singapore was the ‘last line of defense’ and as soon as that fell the anxiety and general fear grew in the country</li></ul></li></ul><ul id="90620ce1-d8b1-441f-834c-ee2723792d18" class="bulleted-list"><li style="list-style-type:disc">Shock</li></ul><ul id="cabe1ee5-bd27-4642-8505-5e0916e46453" class="bulleted-list"><li style="list-style-type:disc">Morale on the home front plummeted</li></ul><ul id="ec836fcb-cec4-477e-8b3b-6927020670fa" class="bulleted-list"><li style="list-style-type:disc">Bombing of Darwin <ul id="3b7319ff-4a22-4ac1-aab4-9ca7a6338489" class="bulleted-list"><li style="list-style-type:circle">Invasion appeared imminent, and within government circles there was tlak of abandoning northern Queensland down to the “Brisbane Line”, where a defence would be mounted against the Japanese invadors.</li></ul></li></ul><ul id="5106e40a-2f74-4e0f-b8b4-e707fad30ed0" class="bulleted-list"><li style="list-style-type:disc">The invasion fears subsided after the battles of Coral Sea and Midway cause the allies smacked japan</li></ul></div><div id="749e1e1d-0374-41a5-b227-e477cb69f3bd" style="width:50%" class="column"><figure id="0c888080-8a49-4a47-b026-c5efe0d57cdd" class="image"><a href="The%20Effect%20of%20the%20War%20on%20the%20Home%20Fronts%20in%20Japan%20%20a011134a578846f1930c31c922ab80fa/Untitled.png"><img style="width:672px" src="The%20Effect%20of%20the%20War%20on%20the%20Home%20Fronts%20in%20Japan%20%20a011134a578846f1930c31c922ab80fa/Untitled.png"/></a></figure></div></div><ul id="2a1e4f77-a595-4b57-9577-20a67d50d555" class="bulleted-list"><li style="list-style-type:disc">Censorship, propaganda, warnings to look out for the ‘enemy within’</li></ul><ul id="6708edfd-ccd5-4f1f-b101-a4946800eddf" class="bulleted-list"><li style="list-style-type:disc">For Aboriginal people, the war also provided increased opportunities<ul id="25e50c74-68b9-477e-a9ab-be7fac8e81db" class="bulleted-list"><li style="list-style-type:circle">Persons ‘not substantially of European origin or descent’ wre not allowed to enlist in the armed forces, but as the demand for labour increased after Japan entered the war, racial barriers to enlistment were relaxed.</li></ul><ul id="2c542f52-1043-486e-8123-cda485dcfe62" class="bulleted-list"><li style="list-style-type:circle">By September 1945, approximately 3000 Aboriginal people and Torres Strait Islanders had served in the military forces. Another 3000 were labourers in the armed services in Australia’s North, and undertook a variety of jobs previously denied to them </li></ul></li></ul><ul id="15afde65-0ed1-4166-a85a-7c982ddd22e2" class="bulleted-list"><li style="list-style-type:disc">Massive migration to urban areas - there’s a lot more industry and job opportunities in cities than rural areas</li></ul><ul id="01d05a39-8c17-4e1a-bd37-16e7a952644d" class="bulleted-list"><li style="list-style-type:disc">In February 1943, mounted police dispersed a brawl between servicemen in Melbourne, during the ‘Battle of Brisbane’ in 1943, an Australian private was killed, and in January 1944 over 1000 men were involved in an Australian-American riot in Perth. Suspicion of the glamour of the GIs had some justification: 7000 Australian women travelled to the USA as war brides</li></ul><ul id="7a48869c-43ac-459e-aded-9d16746577fd" class="bulleted-list"><li style="list-style-type:disc">Menzies announced in 1939 that it would be ‘business as usual’ for the Australian economy.</li></ul><ul id="7a08fca1-8816-4ff6-ac25-27f08768df83" class="bulleted-list"><li style="list-style-type:disc">The war heralded a transition from dependence on primary industry to the growing importance of manufacturing industry, and marked the start of a phase of expanded economic growth fro Australia.</li></ul><ul id="fa40f28b-e3fb-4a42-be96-2ca120b98453" class="bulleted-list"><li style="list-style-type:disc">The war also reinforced pre-war moves by Australian producers away from their traditional dependence on Britain towards the USA, Asia, and Pacific nations. </li></ul><ul id="8fd556bc-c837-4731-9aa7-974d0eeb4837" class="bulleted-list"><li style="list-style-type:disc">Greater regulatory powers were aquired by the Commonwealth at the expense of the states as part of the need to coordinate war production and allocate scarce resources.</li></ul><ul id="0cf24ef9-e4aa-4c8a-8781-c1aadb95770b" class="bulleted-list"><li style="list-style-type:disc">The most important was the commonwealth acquiring exclusive powers to levy income taxes.<ul id="a307e7aa-d4ed-46fb-a162-d3f0f980162b" class="bulleted-list"><li style="list-style-type:circle">Federal Treasury and the Commonwealth Bank became key instrumentds of public policy. Population policy altered after the 1943 invasion scare, leading to the post-war drive to attract migrants from more diverse backgrounds than previously</li></ul></li></ul><h2 id="9b3b2504-2f80-4c37-94b2-bf091a86ff6a" class="">Assess the effects of the war on the homefront </h2><h3 id="551d6b9d-dbb2-47bb-97a6-66d35b359402" class="">Military Effect</h3><h3 id="789948a1-7db2-4126-a190-ff1543342525" class="">Government</h3><p id="1f06287d-5567-4962-b71d-78bef1fb50dc" class="">The effect of the war on the government in Australia was extremely substantial. One of the most significant impacts on the government was the broader diplomatic shift away from the United Kingdom and towards the United States, as well as the division of the Australian Army and the increase of the federal government’s power. Following the Battle of Singapore and all subsequent battles in the South Pacific, the British predisposal to focusing on military action in Europe left Australia somewhat militarily abandoned, but the Attack on Pearl Harbour’s provocation of the United States led to a stronger American military presence in the region and a subsequently stronger relationship between them and Australia. Additionally, the Australian army was  </p><h3 id="9f1d038c-4b9e-4493-8bb9-20580d81650f" class="">Economic</h3><h3 id="907d063d-0dd2-4ecc-8b3a-04cba9a583ee" class="">Social</h3></div></article></body></html>
